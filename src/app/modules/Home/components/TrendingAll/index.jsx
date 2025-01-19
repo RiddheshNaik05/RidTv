@@ -1,16 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Card,
-  Col,
-  Flex,
-  Image,
-  Row,
-  Space,
-  Spin,
-  Typography,
-} from "antd";
-import React from "react";
+import { Button, Image, Row, Typography } from "antd";
 import { IMAGE_BASE_URL } from "../../../../config/constants";
 
 import "../../style.css";
@@ -45,35 +34,15 @@ const TrendingAllHome = ({ data, isLoading }) => {
               {data &&
                 data?.map((trending) => (
                   <Link
-                    to={`/${trending.media_type}/${trending.id}`}
+                    to={`/${getType(trending.media_type)}/${trending.id}`}
                     key={trending.id}
                   >
                     <div
-                      key={trending.id}
                       style={{
-                        // width: "100%",
                         height: "100%",
                         marginRight: "16px",
                       }}
                     >
-                      {/* <Card
-                    hoverable
-                    style={{ width: "300px" }}
-                    cover={
-                      <Image
-                        loading="lazy"
-                        preview={false}
-                        alt={trending.original_name || trending.original_title}
-                        src={`${IMAGE_BASE_URL}${trending.poster_path}`}
-                      />
-                    }
-                  >
-                    <Card.Meta
-                      title={trending.original_name || trending.original_title}
-                      description={trending.description}
-                    />
-                  </Card> */}
-
                       <div>
                         <Image
                           loading="lazy"
