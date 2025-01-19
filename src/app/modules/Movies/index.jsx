@@ -9,30 +9,6 @@ const Movies = () => {
 
   return (
     <div style={{ paddingInline: "15%", paddingBlock: 24 }}>
-      {/* <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
-        {moviesList ? (
-          moviesList?.results.map((movie) => (
-            <Link
-              style={{ textDecoration: "none" }}
-              to={`/movies/${movie.id}`}
-              key={movie.id}
-            >
-              <MovieCard data={movie} />
-            </Link>
-          ))
-        ) : (
-          <Loader />
-        )}
-      </div> */}
-
       <Row gutter={16} style={{ justifyContent: "center" }}>
         {moviesList ? (
           moviesList?.results.map((movie) => (
@@ -63,12 +39,15 @@ const Movies = () => {
         )}
       </Row>
 
-      <Pagination
-        current={page}
-        align="center"
-        onChange={(event) => setPage(event)}
-        total={moviesList?.total_results}
-      />
+      <div style={{ marginTop: 16 }}>
+        <Pagination
+          current={page}
+          align="center"
+          onChange={(event) => setPage(event)}
+          total={moviesList?.total_results}
+          showSizeChanger={false}
+        />
+      </div>
     </div>
   );
 };

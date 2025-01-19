@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Card, Space } from "antd";
 import Meta from "antd/es/card/Meta";
+
 import Loader from "../AppLoader";
 import { IMAGE_BASE_URL } from "../../config/constants";
 import defaultAvatar from "../../assets/default_avatar.png";
@@ -43,33 +44,6 @@ const CastDetails = ({ data }) => {
           <Loader />
         )}
       </Space>
-
-      {/* <Space
-        direction="horizontal"
-        style={{
-          paddingBlock: 8,
-          paddingInline: 16,
-          width: "100%",
-          overflowX: "auto",
-          scrollbarWidth: "thin",
-        }}
-      >
-        {data ? (
-          data?.cast?.slice(0, 10).map((cast) => (
-            <div key={cast.name}>
-              <Avatar
-                src={`${IMAGE_BASE_URL + cast.profile_path}`}
-                alt={cast.original_name}
-                size={140}
-                icon={<UserOutlined />}
-              />
-              <Meta title={cast.name} description={cast.character} />
-            </div>
-          ))
-        ) : (
-          <Loader />
-        )}
-      </Space> */}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Col, Row } from "antd";
+import { Col, Pagination, Row } from "antd";
+
 import Loader from "../../components/AppLoader";
 import TvShowCard from "./components/TvShowCard";
 import useTvShows from "./hooks/useTvShows";
@@ -35,6 +36,16 @@ const TvShows = () => {
             ))
           : isTvShowsListLoading && <Loader />}
       </Row>
+
+      <div style={{ marginTop: 16 }}>
+        <Pagination
+          current={page}
+          align="center"
+          onChange={(event) => setPage(event)}
+          total={tvShowsList?.total_results}
+          showSizeChanger={false}
+        />
+      </div>
     </div>
   );
 };

@@ -1,12 +1,12 @@
+import { Link } from "react-router-dom";
 import { Carousel, Typography } from "antd";
+
 import { IMAGE_BASE_URL } from "../../../../config/constants";
 import useDeviceSize from "../../../../hooks/useDeviceSize";
-import { Link, useNavigate } from "react-router-dom";
 
 const Banner = ({ data }) => {
   const { isOnMobile, isOnTablet, isOnSmallDesktop, isOnDesktop } =
     useDeviceSize();
-  const navigate = useNavigate();
 
   const getType = (type) => {
     switch (type) {

@@ -2,7 +2,7 @@ import Banner from "./components/Banner";
 import useHome from "./hooks/useHome";
 import TrendingAllHome from "./components/TrendingAll";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import WhatsPopularHome from "./components/WhatsPopular";
 import TopRatedHome from "./components/TopRated";
 

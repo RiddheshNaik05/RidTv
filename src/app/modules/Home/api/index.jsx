@@ -1,5 +1,5 @@
-import { get } from "../../../Integrations/ApiService/helpers";
 import { ApiUrls } from "./config";
+import { get } from "../../../Integrations/ApiService/helpers";
 
 const HomeService = {
   getTrendingAll: async () => {

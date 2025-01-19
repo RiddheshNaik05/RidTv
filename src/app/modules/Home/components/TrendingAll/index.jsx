@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button, Image, Row, Typography } from "antd";
-import { IMAGE_BASE_URL } from "../../../../config/constants";
-
-import "../../style.css";
 import Title from "antd/es/typography/Title";
 import Text from "antd/es/typography/Text";
+
+import "../../style.css";
+import { IMAGE_BASE_URL } from "../../../../config/constants";
 import Loader from "../../../../components/AppLoader";
 
 const getType = (type) => {

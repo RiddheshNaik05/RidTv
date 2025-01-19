@@ -1,14 +1,14 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import { Drawer, Menu, Space } from "antd";
 import { Header } from "antd/es/layout/layout";
-import { useLocation, useNavigate } from "react-router-dom";
-import AppLogo from "../../assets/television.png";
+import Typography from "antd/es/typography/Typography";
+import { MenuOutlined } from "@ant-design/icons";
 
 import APPLICATION_ROUTES_URLS from "../../routing/config/appsConfig";
-import Typography from "antd/es/typography/Typography";
 import useToggle from "../../hooks/useToggle";
 import useDeviceSize from "../../hooks/useDeviceSize";
-import { MenuOutlined } from "@ant-design/icons";
 import { COLORS } from "../../utils/colors";
+import AppLogo from "../../assets/television.png";
 
 const MENU_OPTIONS = [
   {

@@ -12,7 +12,7 @@ const Movies = lazy((/* webpackChunkName: "ridtv-movies" */) =>
 const MovieDetails = lazy((/* webpackChunkName: "ridtv-movies-details" */) =>
   import("../../modules/Movies/components/MovieDetails"));
 
-const TvShows = lazy((/* webpackChunkName: "ridtv-tv-show" */) =>
+const TvShows = lazy((/* webpackChunkName: "ridtv-tv-shows" */) =>
   import("../../modules/TvShows"));
 
 const TvShowDetails = lazy((/* webpackChunkName: "ridtv-tv-show-details" */) =>

@@ -1,5 +1,6 @@
 import { Card, Progress, Tooltip } from "antd";
 import Typography from "antd/es/typography/Typography";
+
 import { IMAGE_BASE_URL } from "../../../../config/constants";
 import { COLORS } from "../../../../utils/colors";
 

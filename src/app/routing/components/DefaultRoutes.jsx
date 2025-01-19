@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { DEFAULT_ROUTES } from "../config/routesConfig";
 import APPLICATION_ROUTES_URLS from "../config/appsConfig";
 import AsyncRenderer from "../../components/AsyncRenderer";
-import AppBar from "../../containers/AppBar";
 import ApplicationLayout from "../../containers/ApplicationLayout";
 
 const DefaultRoutes = () => (

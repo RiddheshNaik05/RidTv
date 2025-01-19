@@ -1,5 +1,3 @@
-import React from "react";
-
 import ComposeProviders from "./ComposeProviders";
 import ThemeProvider from "../ThemeProvider";
 

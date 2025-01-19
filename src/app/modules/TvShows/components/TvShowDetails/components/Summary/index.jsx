@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
+import React from "react";
 import dayjs from "dayjs";
 import { Progress, Space } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
+
 import { COLORS } from "../../../../../../utils/colors";
-import React from "react";
 
 const Summary = ({ data }) => {
   return (

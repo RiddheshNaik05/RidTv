@@ -6,14 +6,12 @@ export const theme = {
   },
   components: {
     Segmented: {
-      /* here is your component tokens */
       itemActiveBg: "#fff",
       itemSelectedColor: "#fff",
       itemSelectedBg: COLORS.PRIMARY_RED,
       trackPadding: 4,
     },
     Progress: {
-      /* here is your component tokens */
       circleTextFontSize: 18,
       circleTextColor: COLORS.PRIMARY_RED,
       defaultColor: COLORS.PRIMARY_RED,
